@@ -9,6 +9,7 @@ To include the Flux library, add the following to your `:dependencies`:
     [net.expertsystem.lab.danton/flux "0.1.0"]
 
 ## Usage
+
 (:require [flux.http :as http]
            [flux.update :as update])
 (let [client (http/create page)]
