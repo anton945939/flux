@@ -10,10 +10,11 @@ To include the Flux library, add the following to your `:dependencies`:
 
 ## Usage
 
-(:require [flux.http :as http]
-           [flux.update :as update])
-(let [client (http/create page)]
+To send a map.
 
+    (:require [flux.http :as http]
+           [flux.update :as update])
+    (let [client (http/create page)]
     (.add client col (update/create-doc map) )
     (.commit client col)
     
